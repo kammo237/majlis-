@@ -5,39 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ashray Majlis Invitation</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Naskh+Arabic&display=swap');
 
     body {
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
                   url('https://india.shafaqna.com/wp-content/uploads/2023/07/Companions-of-Imam-Hussain-A.S.-and-Their-Martyrdom.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-      font-family: 'Amiri', 'Georgia', serif;
+      font-family: 'Amiri', 'Noto Naskh Arabic', serif;
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
+    }
+
+    .bismillah {
+      font-size: 2.5em;
+      color: #ffcc00;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #000;
     }
 
     h1.arabic {
-      font-size: 2.8em;
+      font-size: 3em;
       color: #ff0000;
-      text-shadow: 2px 2px #000;
+      font-weight: bold;
       margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
     }
 
     p.invite {
-      font-size: 1.4em;
-      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 1.6em;
+      background-color: rgba(0, 0, 0, 0.7);
       display: inline-block;
-      padding: 20px;
-      border-radius: 12px;
-      border: 1px solid #990000;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-      margin-top: 20px;
-      line-height: 1.6;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px solid #cc0000;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+      line-height: 2;
+      font-weight: bold;
+      max-width: 90%;
     }
 
     span.highlight {
-      color: #ff6666;
+      color: #ff9999;
       font-weight: bold;
     }
 
@@ -46,28 +56,32 @@
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 20px;
+      h1.arabic {
+        font-size: 2.2em;
       }
 
-      h1.arabic {
+      .bismillah {
         font-size: 2em;
       }
 
       p.invite {
-        font-size: 1.1em;
+        font-size: 1.2em;
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="bismillah">786</div>
+
   <h1 class="arabic">عشرہ مجلسِ محرم</h1>
 
   <p class="invite">
     Ashray Majlis Nuhurrum <br>
-    (<span class="highlight">Begma Baji ke Gaibkhany</span>) pr <br>
-    Inshallah at <span class="highlight">4:30 PM</span> <br><br>
-    Ladies shirkat ki guzarish 👋🏼🌹
+    <span class="highlight">(Begma Baji ke Gaibkhany)</span> pr <br><br>
+    From <span class="highlight">1st Muharram to 9th Muharram</span><br>
+    Inshallah at <span class="highlight">4:30 PM</span> daily <br><br>
+    <span class="highlight">Inshallah</span> — Ladies shirkat ki guzarish 👋🏼🌹
   </p>
 </body>
 </html>
