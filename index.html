@@ -1,0 +1,73 @@
+# Create the HTML content and save it as a .txt file for easy downloading on mobile
+html_content = """<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashray Majlis Invitation</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: white;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1.arabic {
+      font-size: 2.5em;
+      color: #cc0000;
+      font-family: 'Amiri', serif;
+      margin-bottom: 20px;
+    }
+
+    p.invite {
+      font-size: 1.3em;
+      color: #ffffff;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    span.highlight {
+      color: #cc0000;
+      font-weight: bold;
+    }
+
+    .emoji {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      h1.arabic {
+        font-size: 1.8em;
+      }
+
+      p.invite {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="arabic">عشرہ مجلسِ محرم</h1>
+
+  <p class="invite">
+    Ashray Majlis Nuhurrum <br>
+    (<span class="highlight">Begma Baji ke Gaibkhany</span>) pr <br>
+    Inshallah at <span class="highlight">4:30 PM</span> <br><br>
+    Ladies shirkat ki guzarish 👋🏼🌹
+  </p>
+</body>
+</html>
+"""
+
+# Save it as a text file
+file_path = "/mnt/data/ashray_majlis_invite.txt"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+file_path
